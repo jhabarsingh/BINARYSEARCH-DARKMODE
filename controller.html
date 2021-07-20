@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Dark Mode</title>
+</head>
+<body>
+    <button class="toggle">
+        Toggle
+    </button>
+
+    <script>
+        
+        let sel = document.querySelector('.toggle');
+        sel.addEventListener('click', () => {
+            let temp = localStorage.getItem('dark-mode');
+            console.log(temp);
+            
+            if(localStorage.getItem('dark-mode')) {
+                localStorage.setItem('dark-mode', true);
+            }
+            else {
+                localStorage.removeItem('dark-mode');
+            }
+        });
+
+    </script>
+</body>
+</html>

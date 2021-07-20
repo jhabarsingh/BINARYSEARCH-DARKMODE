@@ -9,14 +9,6 @@
   "background": {
     "service_worker": "init.js"
   },
-  "action": {
-    "default_icon": {
-      "16": "logo.png",
-      "32": "logo.png",
-      "48": "logo.png",
-      "128": "logo.png"
-    }
-  },
   "icons": {
     "16": "logo.png",
     "32": "logo.png",
