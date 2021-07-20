@@ -1,0 +1,38 @@
+{
+  "name": "Binary Search Dark Mode",
+  "description": "Chrome Extension for Dark Mode in BinarySearch Website.",
+  "version": "1.2.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "init.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  },
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.binarysearch.com/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "offline_enabled": true
+}
